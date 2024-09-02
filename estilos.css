@@ -1,0 +1,179 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to right, #28658d, #b0c4de);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*estilo para o menu superior*/
+header {
+    width: 100%;
+    background-color: #28658d;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+/*estilo para a tela abaixo do menu superior*/
+main {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    padding-bottom: 45px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+/*estilo para as listas utilizados nos menus sobre mim e formação*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #FDFDFD;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+ul ul {
+    margin-top: 10px;
+}
+
+ul ul li {
+    background-color: #C0D1DA;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    transition: font-size 0.3s ease, font-weight 0.3s ease;
+    white-space: nowrap;
+}
+
+ul ul li:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+/*estilo para a aba formação na parte dos cursos*/
+.curso {
+    flex: 1;
+    text-align: left;
+}
+
+.instituicao {
+    flex: 1;
+    text-align: right;
+}
+
+
+
+
+/*estilo para a aba de contato*/
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #28658d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4e6b;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/*estilo para as listas utilizados no menu Meu Portifólio*/
+
+section img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+
+section img:hover {
+    transform: scale(1.20) translateY(30px);
+}
+
+section p {
+    transition: margin-top 0.3s ease-in-out;
+}
+
+section.hover p {
+    margin-top: 80px;
+}

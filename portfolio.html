@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilos.css"><!-- Link para o arquivo CSS -->
+</head>
+<body>
+    <header>
+        <nav><!-- Navegação do site -->
+            <a href="index.html">Sobre Mim</a>
+            <a href="formacao.html">Formação Educacional</a>
+            <a href="portfolio.html">Meu Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Meu Portfólio</h1>
+        <p>A seguir, apresento alguns indicadores que desenvolvi utilizando Excel e a linguagem M para o tratamento dos dados das tabelas:</p>
+        
+        <section>
+            <h2>Indicador de Requisições Pendentes de Compra</h2>
+            <img src="img01.png" alt="Imagem do Indicador de Requisições Pendentes" onmouseover="addHoverClass(this)" onmouseout="removeHoverClass(this)">
+            <p>Para uma análise de quantas compras ainda estão pendentes para serem realizadas em cada grupo de comprador e detalhes dessas requisições.</p>
+        </section>
+        <br>
+	<br>
+	<br>
+	<br>
+        <section>
+            <h2>Indicador de Pedidos de Compra Pendentes de Recebimento de Mercadoria</h2>
+            <img src="img02.png" alt="Imagem do Indicador de Pedidos de Compra Pendentes de Recebimento de Mercadoria" onmouseover="addHoverClass(this)" onmouseout="removeHoverClass(this)">
+            <p>Para realizar uma análise de quantos pedidos de compra ainda não tiveram as mercadorias entregues pelos fornecedores.</p>
+        </section>
+
+
+    </main>
+    <script>
+        function addHoverClass(element) {
+            element.parentElement.classList.add('hover');
+        }
+
+        function removeHoverClass(element) {
+            element.parentElement.classList.remove('hover');
+        }
+    </script>
+</body>
+</html>
